@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Hesaplama Aracı</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hesaplanacak faktörleri seçiniz</h1>
+        <div id="factorSelection">
+            
+            <div id="Factors"></div>
+            <button id="nextStep">Sonraki Adıma Geç</button>
+        </div>
+
+        <div id="riskCalculation" style="display: none;">
+            <h2>Tehlike Durumlarını Seçin</h2>
+            <div id="currentStates"></div>
+            <button id="calculateRisk">Riski Hesapla</button>
+            <div id="result"></div>
+            <button id="downloadExcel" style="display:none;">Excel Olarak İndir</button>
+            <button id="backToFactors">Faktör seçimine dön</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+</body>
+</html>
